@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html amp lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Regularize seu Cartão Renner</title>
+    <link rel="canonical" href="index.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+    
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    
+    <style amp-custom>
+      amp-story { font-family: 'Montserrat', sans-serif; }
+      
+      h1 { font-size: 2.2em; font-weight: 800; margin-bottom: 15px; color: #FFFFFF;}
+      p { font-size: 1.2em; line-height: 1.4; color: #F5F5F5; margin-bottom: 10px; font-weight: 400;}
+      
+      /* Cores adaptadas para o universo Renner */
+      .destaque { color: #FF4D4D; font-weight: 800; } 
+      .alerta { color: #FF4D4D; font-weight: 800; text-decoration: underline; } 
+      
+      .overlay-gradiente {
+        /* Gradiente usando o Vermelho Renner e Preto */
+        background: linear-gradient(to bottom, rgba(227, 0, 27, 0.4) 0%, rgba(17, 17, 17, 0.95) 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        pointer-events: none;
+      }
+
+      .caixa-texto { 
+        background: transparent; 
+        padding: 24px; 
+        margin-top: auto; 
+        margin-bottom: 12vh; 
+        border-left: 6px solid #E3001B; /* Borda Vermelha Renner */
+        z-index: 2; 
+        position: relative;
+      }
+
+      /* ESTILOS DA TELA DE TUTORIAL */
+      .fundo-escuro {
+        background: #111111; /* Fundo escuro premium */
+        width: 100%;
+        height: 100%;
+      }
+      
+      .container-tutorial {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        pointer-events: none; 
+      }
+      
+      .icone-tutorial {
+        font-size: 2.5em;
+        margin-bottom: 5px;
+        display: block;
+      }
+      
+      .texto-tutorial {
+        font-size: 0.9em;
+        color: #F5F5F5;
+        font-weight: 700;
+        text-align: center;
+      }
+      
+      .pos-esquerda { position: absolute; left: 15px; top: 45%; transform: translateY(-50%); width: 90px;}
+      .pos-direita { position: absolute; right: 15px; top: 45%; transform: translateY(-50%); width: 90px;}
+      .pos-cima { position: absolute; bottom: 8vh; left: 50%; transform: translateX(-50%); width: 140px;}
+      
+      @keyframes pulsar {
+        0% { transform: scale(1); opacity: 0.8; }
+        50% { transform: scale(1.05); opacity: 1; }
+        100% { transform: scale(1); opacity: 0.8; }
+      }
+      
+      .btn-comecar {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background: #E3001B; /* Vermelho Renner */
+        border: 2px solid #FFFFFF;
+        padding: 12px 24px;
+        border-radius: 30px;
+        color: #FFF;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        animation: pulsar 2s infinite ease-in-out;
+        width: 220px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(227, 0, 27, 0.5);
+      }
+
+      .i-amphtml-story-share-control {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <amp-story standalone 
+      title="Regularize o Meu Cartão" 
+      publisher="Lojas Renner" 
+      publisher-logo-src="https://via.placeholder.com/150/E3001B/FFFFFF?text=R" 
+      poster-portrait-src="https://images.unsplash.com/photo-1580828369019-2238f4af0aa1?q=80&w=400&h=700&fit=crop">
+      
+      <amp-story-page id="tutorial">
+        <amp-story-grid-layer template="fill">
+          <div class="fundo-escuro"></div>
+        </amp-story-grid-layer>
+        
+        <amp-story-grid-layer template="vertical">
+          <div class="container-tutorial">
+            
+            <div class="btn-comecar" animate-in="fade-in" animate-in-delay="0.2s">
+              Toque para começar
+            </div>
+
+            <div class="pos-esquerda" animate-in="fly-in-left" animate-in-delay="0.5s">
+              <span class="icone-tutorial" style="text-align: center;">👈</span>
+              <p class="texto-tutorial">Toque na esquerda para voltar</p>
+            </div>
+            
+            <div class="pos-direita" animate-in="fly-in-right" animate-in-delay="0.7s">
+              <span class="icone-tutorial" style="text-align: center;">👉</span>
+              <p class="texto-tutorial">Toque na direita para avançar</p>
+            </div>
+            
+            <div class="pos-cima" animate-in="fly-in-bottom" animate-in-delay="1s">
+              <span class="icone-tutorial" style="text-align: center;">👆</span>
+              <p class="texto-tutorial">Arraste para cima para o WhatsApp</p>
+            </div>
+
+          </div>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <amp-story-page id="pagina-1">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="https://images.unsplash.com/photo-1580828369019-2238f4af0aa1?q=80&w=400&h=700&fit=crop" 
+                   layout="fill"></amp-img>
+          <div class="overlay-gradiente"></div>
+        </amp-story-grid-layer>
+        
+        <amp-story-grid-layer template="vertical">
+          <div class="caixa-texto" animate-in="fade-in">
+            <h1>Fatura atrasada? 💳</h1>
+            <p>A correria do dia a dia fez você esquecer a fatura do Meu Cartão? A gente sabe que imprevistos acontecem!</p>
+            <p>Mas deixar esse atraso passar pode trazer <span class="alerta">dores de cabeça</span> que você definitivamente não precisa.</p>
+          </div>
+        </amp-story-grid-layer>
+        <amp-story-page-outlink layout="nodisplay">
+          <a href="https://wa.me/555139215464">Resolver agora</a>
+        </amp-story-page-outlink>
+      </amp-story-page>
+
+      <amp-story-page id="pagina-2">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=400&h=700&fit=crop" 
+                   layout="fill"></amp-img>
+          <div class="overlay-gradiente"></div>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical">
+          <div class="caixa-texto" animate-in="fly-in-left">
+            <h1>O perigo da bola de neve 📈</h1>
+            <p>Regularizar logo nos primeiros dias é vital para o seu bolso.</p>
+            <p>Os juros do crédito rotativo crescem muito rápido. Cada dia a mais faz a sua fatura original se transformar em uma <span class="destaque">dívida muito maior</span> do que as roupas que você comprou.</p>
+          </div>
+        </amp-story-grid-layer>
+        <amp-story-page-outlink layout="nodisplay">
+          <a href="https://wa.me/555139215464">Evitar juros</a>
+        </amp-story-page-outlink>
+      </amp-story-page>
+
+      <amp-story-page id="pagina-3">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=400&h=700&fit=crop" 
+                   layout="fill"></amp-img>
+          <div class="overlay-gradiente"></div>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical">
+          <div class="caixa-texto" animate-in="fly-in-right">
+            <h1>Adeus, looks novos? 👗🚫</h1>
+            <p>Se a fatura chegar a <span class="destaque">30 dias de atraso</span>, seu cartão é bloqueado.</p>
+            <br>
+            <p>Você fica de fora das <b>novas coleções</b>, perde promoções exclusivas e não consegue mais fazer compras nas lojas físicas, site ou app. Não perca a chance de renovar seu estilo!</p>
+          </div>
+        </amp-story-grid-layer>
+        <amp-story-page-outlink layout="nodisplay">
+          <a href="https://wa.me/555139215464">Evite o bloqueio</a>
+        </amp-story-page-outlink>
+      </amp-story-page>
+
+      <amp-story-page id="pagina-4">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="https://images.unsplash.com/photo-1607513746994-6c58dc0ba8aa?q=80&w=400&h=700&fit=crop" 
+                   layout="fill"></amp-img>
+          <div class="overlay-gradiente"></div>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical">
+          <div class="caixa-texto" animate-in="fly-in-bottom">
+            <h1>O risco para o seu CPF 🚨</h1>
+            <p>Se o atraso persistir, a consequência seguinte é a <span class="alerta">negativação no Serasa</span>.</p>
+            <br>
+            <p>Ter o nome restrito atrapalha sua vida financeira em todo o mercado, não apenas com a gente. Proteja o seu crédito!</p>
+          </div>
+        </amp-story-grid-layer>
+        <amp-story-page-outlink layout="nodisplay">
+          <a href="https://wa.me/555139215464">Proteger meu CPF</a>
+        </amp-story-page-outlink>
+      </amp-story-page>
+
+      <amp-story-page id="pagina-5">
+        <amp-story-grid-layer template="fill">
+          <amp-img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=400&h=700&fit=crop" 
+                   layout="fill"></amp-img>
+          <div class="overlay-gradiente"></div>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical">
+          <div class="caixa-texto" animate-in="drop">
+            <h1>A Renner ajuda você a resolver! 🤝</h1>
+            <p>Não precisa ter dor de cabeça. Queremos encontrar a <span class="destaque">melhor solução para o seu bolso</span> hoje mesmo.</p>
+            <br>
+            <p>Arraste para cima, chame a gente no WhatsApp e tire esse peso das costas de forma rápida e segura!</p>
+          </div>
+        </amp-story-grid-layer>
+        <amp-story-page-outlink layout="nodisplay">
+          <a href="https://wa.me/555139215464">Chamar no WhatsApp</a>
+        </amp-story-page-outlink>
+      </amp-story-page>
+
+    </amp-story>
+  </body>
+</html>
